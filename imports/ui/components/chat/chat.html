@@ -1,0 +1,16 @@
+<template name="chat">
+  <form class="chat__form">
+    <input type="text" name="owner" placeholder="Pseudo" required>
+    <input type="text" name="message" placeholder="Your message" required>
+    <input type="submit" name="submit" value="Send">
+  </form>
+  
+  <ul>
+    {{#each chats}}
+    <li>
+      <span class="chat__owner"><strong>{{owner}}</strong> : </span>
+      <span class="chat__text">{{message}}</span>
+    </li>
+    {{/each}}
+  </ul>
+</template>

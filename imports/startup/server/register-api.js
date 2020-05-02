@@ -1,4 +1,5 @@
 // Register your apis here
 
-import '../../api/links/methods.js';
-import '../../api/links/server/publications.js';
+//chats
+import '../../api/chats/methods.js';
+import '../../api/chats/server/publications.js';
